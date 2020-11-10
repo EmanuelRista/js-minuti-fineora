@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="hours"></p>
+    <p id="minutesNeeded"></p>
+    <script type="text/javascript">
+      var d = new Date();//creo un oggetto che si chiama D che contiene tutte le informazioni riguardo a giorno e ora in questo momento;
+      document.getElementById("hours").innerHTML = "Sono le " + d.getHours() + " e " + d.getMinutes() + " minuti";//Inserisco ora e minuti nel p id "hours";
+      document.getElementById("minutesNeeded").innerHTML = "Mancano " + (60 - d.getMinutes()) + " minuti alla fine dell'ora"//60 (minuti in un'ora) - i minuti = minuti mancanti alla fine dell'ora;
+    </script>
+  </body>
+</html>
